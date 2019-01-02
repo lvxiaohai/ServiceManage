@@ -2,10 +2,10 @@
 Mac平台服务管理app.
 
 ## 截图
-<img src="Screentshot/1.png" width="400">
-<img src="Screentshot/2.png" width="400">
-<img src="Screentshot/3.png" width="400">
-<img src="Screentshot/4.png" width="400">
+<img src="https://github.com/lvxiaohai/ServiceManage/raw/master/Screenshot/1.png" width="300">
+<img src="https://github.com/lvxiaohai/ServiceManage/raw/master/Screenshot/2.png" width="300">
+<img src="https://github.com/lvxiaohai/ServiceManage/raw/master/Screenshot/3.png" width="300">
+<img src="https://github.com/lvxiaohai/ServiceManage/raw/master/Screenshot/4.png" width="300">
 
 ## 系统要求
 * Swift 4.2
