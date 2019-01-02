@@ -1,0 +1,6 @@
+framework module Pods_ServiceManage {
+  umbrella header "Pods-ServiceManage-umbrella.h"
+
+  export *
+  module * { export * }
+}

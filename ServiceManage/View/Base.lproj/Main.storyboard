@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Ap-vw-6rX">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="dKC-aW-UcD">
+            <objects>
+                <windowController id="0Ap-vw-6rX" sceneMemberID="viewController">
+                    <window key="window" title="服务管理" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="hkf-Cr-SlN">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="0Ap-vw-6rX" id="z1M-4D-Xga"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="yN3-Ms-2U8" kind="relationship" relationship="window.shadowedContentViewController" id="dvw-o1-4HQ"/>
+                    </connections>
+                </windowController>
+                <customObject id="IyQ-XR-hgq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="973"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="L53-mn-1iE">
+            <objects>
+                <viewController id="yN3-Ms-2U8" customClass="MainViewController" customModule="ServiceManage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="gpf-Kr-Vsk">
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="512"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <tabView focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vfe-TN-Hid">
+                                <rect key="frame" x="8" y="5" width="684" height="498"/>
+                                <font key="font" metaFont="system"/>
+                            </tabView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vfe-TN-Hid" secondAttribute="trailing" constant="15" id="GJj-n8-SQx"/>
+                            <constraint firstItem="Vfe-TN-Hid" firstAttribute="top" secondItem="gpf-Kr-Vsk" secondAttribute="top" constant="15" id="Rem-xA-szP"/>
+                            <constraint firstItem="Vfe-TN-Hid" firstAttribute="leading" secondItem="gpf-Kr-Vsk" secondAttribute="leading" constant="15" id="X8H-RH-c3W"/>
+                            <constraint firstAttribute="bottom" secondItem="Vfe-TN-Hid" secondAttribute="bottom" constant="15" id="lz4-KI-veh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tabView" destination="Vfe-TN-Hid" id="pYb-1i-dcM"/>
+                    </connections>
+                </viewController>
+                <customObject id="BQK-aG-r4s" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="1545"/>
+        </scene>
+    </scenes>
+</document>
