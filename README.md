@@ -13,4 +13,4 @@ Mac平台服务管理app.
 * MacOS 10.13
 
 ## Thanks
-<https://raw.githubusercontent.com/erikberglund/SwiftPrivilegedHelper>
+<https://github.com/erikberglund/SwiftPrivilegedHelper>
